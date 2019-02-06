@@ -7,8 +7,8 @@ Wellcome to JsonDB of Sas.
 
 it's made to use json easy at file system like nosql db.
 
-
 depency : https://www.newtonsoft.com/json
+json.net guide : https://www.newtonsoft.com/json/help/html/Introduction.htm
 
 example >>
 

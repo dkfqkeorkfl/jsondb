@@ -187,7 +187,7 @@ namespace Sas
 			if (GetKind (path) == RESERVE.DIR)
 				Del (path);
 			var v = (JValue)obj;
-			var str = v.Type == JTokenType.String ? string.Format ("\"{0}\"", v.ToString ()) : v.ToString ();
+			var str = v.Type == JTokenType.String || v.Type == JTokenType.Date ? string.Format ("\"{0}\"", v.ToString ()) : v.ToString ();
 			PlayerPrefs.SetString (path, str);
 			PlayerPrefs.SetString (GetPropertyVal (PROPERTY.TYPE) + path, new JValue (RESERVE.OBJ.GetHashCode ()).ToString ());
 		}

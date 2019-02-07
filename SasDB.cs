@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Sas
 {
-	public class JsonDB : MonoBehaviour
+	public class JsonDB
 	{
 		public readonly char[] delim = new char[]{ '\\' };
 
